@@ -1,0 +1,8 @@
+.intro-lead-in, .intro-heading {
+  text-shadow: -2px 0 #333, 0 2px #333, 2px 0 #333, 0 -2px #333;
+}
+
+/*header {
+  opacity: 0.5;
+ filter: alpha(opacity=50); /* For IE8 and earlier */
+}*/

@@ -1,0 +1,315 @@
+# Site settings
+baseurl = "https://example.org/"
+languageCode = "en-us"
+title = "First Impressions"
+theme = "hugo-agency-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-4124866-41"
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "First Impressions"
+  description = "Give your users their best experiences. Make the most of your website."
+
+  # Link custom assets relative to /static
+  custom_css = ['css/custom.css']
+  custom_js  = []
+  favicon    = "favicon.ico" #TODO
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Oh Noes! This page does not exist."
+    text = "Try [this page](/)?"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "First Impressions"
+    # Optional logo as brand stored in img/
+    #logo = "logo.svg"
+    services = "Services"
+    # portfolio = "Portfolio"
+    about = "About"
+    team = "Team"
+    contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    [[menu.postpend]]
+      url = "https://theuserisdrunk.com"
+      name = "The User Is Drunk"
+      weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "Set a good first impression."
+    subtitle = "Overhaul your User Experience Strategy"
+    buttonText = "I want a little more..."
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "What We Do Here"
+    subtitle = "How we can make your business and brand stop users in their tracks."
+
+    [[params.services.row]]
+
+    [[params.services.row.list]]
+      icon = "fa-user-circle-o"
+      title = "User Experience Testing"
+      description = "We'll review your site using qualitative reviews, with users who have been trained to test websites. We're not bots. We're actual people."
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-beer"
+      title = "With Realistic Contexts"
+      description = "Unlike almost anyone else, we'll review your content where it matters - where your users are. Whether from the bar or from the patio, in the stadium or in a cafe, we'll give you real feedback."
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-binoculars"
+      title = "And In Depth Research"
+      description = "We're industry experts and designers ourselves. We'll let you know what works for you, and what doesn't. We'll work with you to fine tune your marketing."
+      url = "#"
+
+  # Portfolio section
+  [params.portfolio]
+    enable = false
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    # title = "Previous Projects"
+    # subtitle = "Why do we think we're right for you?"
+    #
+    # [params.portfolio.modal]
+    #   client = "Client"
+    #   date = "Date"
+    #   category = "Category"
+    #   buttonText = "Close project"
+
+
+    # About section
+  [params.about]
+    enable = true
+    title = "Our Story"
+    subtitle = "How we got from where we were, to where you are."
+    endpoint = "Be part<br>of our<br>story!"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "drunk.png"
+      date = "2015"
+      title = "The User Is Drunk"
+      description = "With The User Is Drunk, we made a viral splash in the user experience world. With scores of clients and hundreds of thousands of unique hits in the first month, we found a nice no one else had - honest feedback, the kind you can't get from a Manhattan agency. Featured in FastCo, The Next Web, Gizmodo, TechCo, and others."
+
+    [[params.about.events]]
+      img = "mom.png"
+      date = "2016"
+      title = "The User Is My Mom"
+      description = "Our follow-up was just as good, tapping a market that most designers and web marketers forget - older users who didn't grow up with smartphones. Featured in Wired, CNBC, and Vice."
+
+    [[params.about.events]]
+      img = "head.png"
+      date = "2017"
+      title = "Expansion"
+      description = "With dozens of clients and years of experience, we're branching out. Bringing skills that have increased revenue, upped conversion, and scaled websites, we're ready to use our proven and innovative methods to larger markets."
+
+
+  # Team section
+  [params.team]
+    enable = true
+    # Possibility to center items
+    center = true
+    title = "Our Founder"
+    subtitle = "Who is sailing this ship, anyway?"
+    # description = "Unlike most companies, we bring on people per project, for you. At heart, we're a core team of one; for each project, we'll reach out to our extensive network and build a team custom for your needs."
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.team.members]]
+      img = "richard.jpg"
+      name = "Richard Littauer"
+      # position = "Lead"
+      # reportsTo = ""
+      # livesIn = "[, Germany](#some-maps-url)"
+      # scope = [
+      #   "UX for [member dashboard](#)",
+      #   "Maintainer for [awesome-project](#)",
+      #   "Open Source [community management](#)"
+      # ]
+      # For bio markdown and even multiline strings are available.
+      bio = "Richard is a full stack developer from SF with design credentials; a hipster from Brooklyn; an artist in Montreal; and a remote worker in a cafe near you. He leads First Impressions and organizes teams to suit your needs."
+      social = [
+        ["fa-twitter", "https://twitter.com/RichardLitt"],
+        ["fa-envelope", "mailto:richard@firstimpressions.io"],
+        ["fa-linkedin", "https://www.linkedin.com/in/richard-littauer-130026138/"]
+      ]
+    #
+    # [[params.team.members]]
+    #   img = "2.jpg"
+    #   name = "Larry Parker"
+    #   position = "Lead Marketer"
+    #   social = [
+    #     ["fa-twitter", "#"],
+    #     ["fa-facebook", "#"],
+    #     ["fa-linkedin", "#"]
+    #   ]
+    #
+    # [[params.team.members]]
+    #   img = "3.jpg"
+    #   name = "Diana Pertersen"
+    #   position = "Lead Developer"
+    #   social = [
+    #     ["fa-twitter", "#"],
+    #     ["fa-facebook", "#"],
+    #     ["fa-linkedin", "#"]
+    #   ]
+
+  # Client section
+    [params.clients_list]
+      enable = true
+      # Possibility to center items
+      #center = true
+      # Optional client title specifying the involvement
+      #title = "Used and trusted by"
+
+      # All the clients' logos are stored under 'static/img/logos'.
+      # Replace them with your clients's logos.
+      # Suggestion: .svg in the size of 280px*80px looks good
+      [[params.clients]]
+        logo = "hubspot.svg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "gilt_0.png"
+        link = "#"
+
+      [[params.clients]]
+        logo = "gizmodo.png"
+        link = "#"
+
+      [[params.clients]]
+        logo = "xhamster.png"
+        link = "#"
+
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "Contact us"
+    subtitle  = "Ready to make your business more exciting?"
+    buttonText = "Send us a message."
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    email = "richard@firstimpressions.io"
+
+    # Success and error message overwrite for async contact form
+    #thanks = "Thank you for awesomely contacting us."
+    #error = "Message could not be send. Please contact us at mail@example.com instead."
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Your Name *"
+      warning = "Please enter your name."
+
+    [params.contact.form.email]
+      text = "Your Email *"
+      warning = "Please enter your email address."
+
+    [params.contact.form.phone]
+      text = "Your Phone *"
+      warning = "Please enter your phone number."
+
+    [params.contact.form.message]
+      text = "Your Message *"
+      warning = "Please enter a message."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "All content © Creative Commons SA-BY-NC 4.0 Unported License by Burnt Fen Creative LLC."
+
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      link = "https://twitter.com/richlitt"
+
+    # [[params.footer.social]]
+    #   icon = "fa-facebook"
+    #   link = "#"
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      link = "https://www.linkedin.com/in/richard-littauer-130026138/"
+
+    # TODO
+    # [[params.footer.quicklinks]]
+    #   text = "Privacy Policy"
+    #   link = "#"
+
+    # TODO
+    # [[params.footer.quicklinks]]
+    #   text = "Terms of Use"
+    #   link = "#"
