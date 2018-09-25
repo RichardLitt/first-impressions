@@ -76,7 +76,7 @@ googleAnalytics = "UA-4124866-41"
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
     title = "Set a good first impression."
-    subtitle = "Overhaul your User Experience Strategy"
+    subtitle = "Overhaul your UX Strategy"
     buttonText = "I want a little more..."
 
 
@@ -92,19 +92,19 @@ googleAnalytics = "UA-4124866-41"
       icon = "fa-user-circle-o"
       title = "User Experience Testing"
       description = "We'll review your site using qualitative reviews, with users who have been trained to test websites. We're not bots. We're actual people."
-      url = "#"
+      # url = "#"
 
     [[params.services.row.list]]
       icon = "fa-beer"
-      title = "With Realistic Contexts"
+      title = "Realistic Contexts"
       description = "Unlike almost anyone else, we'll review your content where it matters - where your users are. Whether from the bar or from the patio, in the stadium or in a cafe, we'll give you real feedback."
-      url = "#"
+      # url = "#"
 
     [[params.services.row.list]]
       icon = "fa-binoculars"
-      title = "And In Depth Research"
+      title = "In Depth Research"
       description = "We're industry experts and designers ourselves. We'll let you know what works for you, and what doesn't. We'll work with you to fine tune your marketing."
-      url = "#"
+      # url = "#"
 
   # Portfolio section
   [params.portfolio]
